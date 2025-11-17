@@ -14,21 +14,3 @@ Pillow: This is used to create the barcodes in the image format. To install this
 pip install pillow
 
 
-Here, we are going to generate a barcode in the EAN-13 format. First, let's generate it as an SVG file.
-
-
-
-from barcode import EAN13
-number = '5901234123457'
-my_code = EAN13(number)
-my_code.save("new_code")
-
-
-Now, let's generate the same barcode in PNG format.
-
-
-from barcode import EAN13
-from barcode.writer import ImageWriter
-number = '5901234123457'
-my_code = EAN13(number, writer=ImageWriter())
-my_code.save("new_code1")
