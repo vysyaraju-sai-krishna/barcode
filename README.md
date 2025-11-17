@@ -27,7 +27,6 @@ my_code.save("new_code")
 Now, let's generate the same barcode in PNG format.
 
 
-# import EAN13 from barcode module
 from barcode import EAN13
 from barcode.writer import ImageWriter
 number = '5901234123457'
